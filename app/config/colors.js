@@ -7,4 +7,5 @@ export default {
   midGrey: "#636969",
   lightGrey: "#f8f8f4",
   danger: "#ff5252",
+  boldRed: "#ff0000",
 };
