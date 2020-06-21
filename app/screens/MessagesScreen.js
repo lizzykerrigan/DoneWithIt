@@ -10,15 +10,17 @@ const MessagesScreen = () => {
   const initialMessages = [
     {
       id: 1,
-      title: "T1",
-      description: "D1",
-      image: require("../assets/jacket.jpg"),
+      title: "Lizzy Kerrigan",
+      description:
+        "Hey! Just wanted to message you about that couch you were selling a while back...",
+      image: require("../assets/lizzy.jpeg"),
     },
     {
       id: 2,
-      title: "T2",
-      description: "D2",
-      image: require("../assets/jacket.jpg"),
+      title: "Lizzy Kerrigan",
+      description:
+        "Hey! Just wanted to message you about that couch you were selling a while back...",
+      image: require("../assets/lizzy.jpeg"),
     },
   ];
 
@@ -50,14 +52,10 @@ const MessagesScreen = () => {
         ItemSeparatorComponent={ListItemSeparator}
         refreshing={refreshing}
         onRefresh={() => {
-          setMessages([
-            {
-              id: 2,
-              title: "T2",
-              description: "D2",
-              image: require("../assets/jacket.jpg"),
-            },
-          ]);
+          setRefreshing(true);
+          setTimeout(() => {
+            setRefreshing(false);
+          }, 1000);
         }}
       />
     </ScreenComponent>
