@@ -1,14 +1,6 @@
 import React, { useState } from "react";
-import LoginScreen from "./app/screens/LoginScreen";
+import ListingEditScreen from "./app/screens/ListingEditScreen";
 
 export default function App() {
-  return <LoginScreen />;
+  return <ListingEditScreen />;
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: "#000",
-//     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-//   },
-// });
