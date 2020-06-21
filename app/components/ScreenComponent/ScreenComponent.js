@@ -7,7 +7,7 @@ import colors from "../../config/colors";
 const ScreenComponent = ({ children, style }) => {
   return (
     <SafeAreaView style={[styles.screen, style]}>
-      <View style={style}>{children}</View>
+      <View style={[styles.view, style]}>{children}</View>
     </SafeAreaView>
   );
 };
@@ -18,6 +18,9 @@ const styles = StyleSheet.create({
   screen: {
     paddingTop: Constants.statusBarHeight,
     backgroundColor: colors.white,
+    flex: 1,
+  },
+  view: {
     flex: 1,
   },
 });
