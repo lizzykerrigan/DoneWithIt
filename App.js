@@ -1,11 +1,8 @@
-import React from "react";
-import WelcomeScreen from "./app/screens/WelcomeScreen";
-import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
-import ViewImageScreen from "./app/screens/ViewImageScreen";
-import MessagesScreen from "./app/screens/MessagesScreen";
+import React, { useState } from "react";
+import LoginScreen from "./app/screens/LoginScreen";
 
 export default function App() {
-  return <MessagesScreen />;
+  return <LoginScreen />;
 }
 
 // const styles = StyleSheet.create({
