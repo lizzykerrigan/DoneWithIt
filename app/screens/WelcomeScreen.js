@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View, ImageBackground, Image } from "react-native";
 
 import colors from "../config/colors";
-import AppButton from "../components/AppButton";
+import Button from "../components/Button";
 import Card from "../components/Card";
 
 export default function WelcomeScreen() {
@@ -22,8 +22,8 @@ export default function WelcomeScreen() {
         <Text style={styles.tagline}>Sell what you don't need.</Text>
       </View>
       <View style={styles.buttonsContainer}>
-        <AppButton color="primary" title="Login" />
-        <AppButton color="secondary" title="Register" />
+        <Button color="primary" title="Login" />
+        <Button color="secondary" title="Register" />
       </View>
     </ImageBackground>
   );
