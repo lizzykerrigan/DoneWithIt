@@ -4,26 +4,30 @@ import { StyleSheet, Text, View, ImageBackground, Image } from "react-native";
 import colors from "../config/colors";
 import Button from "../components/Button";
 import Card from "../components/Card";
+import routes from "../navigation/routes";
 
-export default function WelcomeScreen() {
+export default function WelcomeScreen({ navigation }) {
   return (
     <ImageBackground
       blurRadius={5}
       style={styles.background}
       source={require("../assets/background.jpg")}
     >
-      <Card
-        image={require("../assets/background.jpg")}
-        title="Red jacket"
-        subtitle="£100"
-      />
       <View style={styles.logoContainer}>
         <Image source={require("../assets/logo-red.png")} style={styles.logo} />
         <Text style={styles.tagline}>Sell what you don't need.</Text>
       </View>
       <View style={styles.buttonsContainer}>
-        <Button color="primary" title="Login" />
-        <Button color="secondary" title="Register" />
+        <Button
+          color="primary"
+          title="Login"
+          onPress={() => navigation.navigate(routes.LOGIN)}
+        />
+        <Button
+          color="secondary"
+          title="Register"
+          onPress={() => navigation.navigate(routes.REGISTER)}
+        />
       </View>
     </ImageBackground>
   );
