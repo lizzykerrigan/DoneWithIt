@@ -5,7 +5,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "jest"
   },
   "dependencies": {
     "@react-native-community/hooks": "^2.6.0",
@@ -34,8 +35,19 @@
     "@react-native-community/netinfo": "5.5.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@testing-library/jest-native": "^3.1.0",
     "babel-preset-expo": "~8.1.0",
-    "@babel/core": "^7.8.6"
+    "jest": "^26.1.0",
+    "react-native-testing-library": "^2.1.0",
+    "react-test-renderer": "^16.13.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "collectCoverage": true,
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ]
   },
   "private": true
 }

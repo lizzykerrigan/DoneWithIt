@@ -8,6 +8,7 @@ const ActivityIndicator = ({ visible = false }) => {
       autoPlay
       loop
       source={require("../../assets/animations/loader.json")}
+      testID="lottie-view"
     />
   );
 };
