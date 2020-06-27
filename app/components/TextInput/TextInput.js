@@ -13,6 +13,7 @@ const AppTextInput = ({ icon, width = "100%", ...textInputProps }) => {
           size={20}
           iconColor={defaultStyles.colors.midGrey}
           style={styles.icon}
+          testID="icon"
         />
       )}
       <TextInput
