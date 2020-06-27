@@ -4,7 +4,7 @@ import { render } from "react-native-testing-library";
 import AppText from "./AppText";
 
 describe("AppText", () => {
-  it("should render LottieView if visible prop exists", () => {
+  it("should render its children as a Text node", () => {
     const exampleText = "Example text";
     const element = render(<AppText>{exampleText}</AppText>);
 
