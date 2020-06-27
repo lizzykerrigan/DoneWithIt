@@ -7,7 +7,7 @@ import AppText from "../AppText";
 const CategoryPickerItem = ({ item, onPress }) => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={onPress}>
+      <TouchableOpacity testID="category-item" onPress={onPress}>
         <Icon
           backgroundColor={item.backgroundColor}
           name={item.icon}
