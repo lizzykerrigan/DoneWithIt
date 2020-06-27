@@ -6,7 +6,7 @@ import colors from "../../config/colors";
 
 const ScreenComponent = ({ children, style }) => {
   return (
-    <SafeAreaView style={[styles.screen, style]}>
+    <SafeAreaView style={[styles.screen, style]} testID="safe-area-view">
       <View style={[styles.view, style]}>{children}</View>
     </SafeAreaView>
   );
