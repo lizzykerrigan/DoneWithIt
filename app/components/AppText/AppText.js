@@ -5,7 +5,7 @@ import defaultStyles from "../../config/defaultStyles";
 
 const AppText = ({ children, style, ...textProps }) => {
   return (
-    <Text style={[defaultStyles.text, style]} {...textProps}>
+    <Text style={[defaultStyles.text, style]} {...textProps} testID="app-text">
       {children}
     </Text>
   );
