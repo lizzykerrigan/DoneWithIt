@@ -3,8 +3,6 @@ import { render, fireEvent } from "react-native-testing-library";
 
 import CategoryPickerItem from "./CategoryPickerItem";
 
-jest.mock("../Icon", () => () => "Icon");
-
 describe("CategoryPickerItem", () => {
   const item = {
     backgroundColor: "#2bcbba",
